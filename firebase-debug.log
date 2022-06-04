@@ -1,0 +1,42 @@
+[debug] [2022-05-22T05:46:38.943Z] ----------------------------------------------------------------------
+[debug] [2022-05-22T05:46:38.945Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-22T05:46:38.945Z] CLI Version:   11.0.0
+[debug] [2022-05-22T05:46:38.946Z] Platform:      win32
+[debug] [2022-05-22T05:46:38.946Z] Node Version:  v16.14.2
+[debug] [2022-05-22T05:46:38.946Z] Time:          Sun May 22 2022 11:16:38 GMT+0530 (India Standard Time)
+[debug] [2022-05-22T05:46:38.946Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-22T05:46:39.000Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-22T05:46:39.000Z] > authorizing via signed-in user (amankumarsinghh2@gmail.com)
+[debug] [2022-05-22T05:46:39.000Z] [iam] checking project clone-b91d2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-22T05:46:39.002Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-b91d2:testIamPermissions [none]
+[debug] [2022-05-22T05:46:39.002Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-b91d2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-22T05:46:42.036Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-b91d2:testIamPermissions 200
+[debug] [2022-05-22T05:46:42.036Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-b91d2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-22T05:46:42.037Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-b91d2 [none]
+[debug] [2022-05-22T05:46:43.395Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-b91d2 200
+[debug] [2022-05-22T05:46:43.395Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-b91d2 {"projectId":"clone-b91d2","projectNumber":"541435796527","displayName":"amazon-clone","name":"projects/clone-b91d2","resources":{"hostingSite":"clone-b91d2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'clone-b91d2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-22T05:46:43.397Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-b91d2 [none]
+[debug] [2022-05-22T05:46:45.205Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-b91d2 200
+[debug] [2022-05-22T05:46:45.205Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-b91d2 {"projectId":"clone-b91d2","projectNumber":"541435796527","displayName":"amazon-clone","name":"projects/clone-b91d2","resources":{"hostingSite":"clone-b91d2"},"state":"ACTIVE"}
+[debug] [2022-05-22T05:46:45.207Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions [none]
+[debug] [2022-05-22T05:46:45.207Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-22T05:46:51.473Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions 200
+[debug] [2022-05-22T05:46:51.473Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions {"name":"projects/541435796527/sites/clone-b91d2/versions/51286d13d9a3e157","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[clone-b91d2]: beginning deploy... 
+[info] i  hosting[clone-b91d2]: found 12 files in build 
+[debug] [2022-05-22T05:46:51.481Z] [hosting] uploading with 200 concurrency
+[debug] [2022-05-22T05:46:51.485Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2022-05-22T05:46:51.485Z] [hosting][hash queue][FINAL] {"max":1,"min":0,"avg":0,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":3}
+[debug] [2022-05-22T05:46:51.485Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions/51286d13d9a3e157:populateFiles [none]
+[debug] [2022-05-22T05:46:51.485Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions/51286d13d9a3e157:populateFiles {"files":{"/asset-manifest.json":"0e25e2578193f75dee6e1614b3542758ffa3050f9b0c26003733bb3448f22160","/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/index.html":"4aa290086ff46d6edc6444f9b2aaf917802a011cf85330a348e78aaf55c7bd98","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/css/main.ebd8a225.css":"3f1f1dd3fe44f5ed77b370f45fd4499a8d93b1a833630c2798711f8c1ca86ba7","/static/css/main.ebd8a225.css.map":"2457a6277b886f4d579bf0a9d15fbf71b645695c47211dadad0a15d18fd4a4c7","/static/js/main.c046a5ac.js":"251ebf7b133e40ddc9a340908c94be163c793df06d9afa666b3a49d519e7d5ed","/static/js/main.c046a5ac.js.LICENSE.txt":"b8d1af8b0ddaf0998fd233b78360e858b03ca9879be19845c9828dceed104e4f","/static/js/main.c046a5ac.js.map":"78fa3cacb98b2004740dec7be53e273cfcc9b52ec43e7453bb795d1f9a109c7a"}}
+[debug] [2022-05-22T05:46:54.452Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions/51286d13d9a3e157:populateFiles 200
+[debug] [2022-05-22T05:46:54.452Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/541435796527/sites/clone-b91d2/versions/51286d13d9a3e157:populateFiles {"uploadRequiredHashes":["78fa3cacb98b2004740dec7be53e273cfcc9b52ec43e7453bb795d1f9a109c7a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/clone-b91d2/versions/51286d13d9a3e157/files"}
+[debug] [2022-05-22T05:46:54.453Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-b91d2/versions/51286d13d9a3e157/files/78fa3cacb98b2004740dec7be53e273cfcc9b52ec43e7453bb795d1f9a109c7a [none]
+[debug] [2022-05-22T05:46:54.453Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-b91d2/versions/51286d13d9a3e157/files/78fa3cacb98b2004740dec7be53e273cfcc9b52ec43e7453bb795d1f9a109c7a [stream]
+[debug] [2022-05-22T05:46:54.453Z] [hosting][populate queue][FINAL] {"max":2969,"min":2969,"avg":2969,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2969}
+[debug] [2022-05-22T05:46:54.454Z] [hosting] uploads queued: 1

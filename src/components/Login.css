@@ -1,0 +1,96 @@
+.login {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+
+.login__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 125px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login__container {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.email {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.password {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.login__container > h1 {
+    font-weight: 500px;
+}
+
+.login__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.btn__login {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 13px;
+    background: #ffe205;
+    padding: 8px 18px 8px 18px;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+}
+  
+.btn__login:hover {
+    background: #ff9900;
+    text-decoration: none;
+}
+
+.btn__register {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 13px;
+    /* background: #ffe205; */
+    padding: 8px 18px 8px 18px;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+}
+  
+.btn__register:hover {
+    background: lightgray;
+    text-decoration: none;
+}
